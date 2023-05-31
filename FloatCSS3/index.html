@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Clear</title>
+    <style>
+      /* ส่วนบน */
+      img {
+        width: 150px;
+      }
+      .box-1 img {
+        float: left;
+      }
+      .box-2 img {
+        float: right;
+      }
+      .box-3 img {
+        float: none;
+      }
+      /* ส่วนล่าง */
+      .container {
+        /* เป็นค่าที่รวม padding กับ border แล้ว*/
+        width: 960px;
+        margin: 30px auto;
+      }
+      .body {
+        line-height: 1.4em;
+      }
+      .box {
+        background-color: antiquewhite;
+        border: 1px solid rebeccapurple;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+      /* รวมกันไม่ได้ 100% เพราะมีพื้นที่paddingด้วย 5%*/
+      #box-2 {
+        float: left;
+        width: 70%;
+      }
+      #box-3 {
+        float: right;
+        width: 25%;
+      }
+      /* Clear */
+      .clr {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-1">
+      <p>
+        <img src="../../HTML5ForBeginner/HTMLStructure/img/cbc.png" alt="cbc" />
+        Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+        Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+        Bobby
+      </p>
+    </div>
+    <div class="box-2">
+      <p>
+        <img src="../../HTML5ForBeginner/HTMLStructure/img/cbc.png" alt="cbc" />
+        Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+        Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+        Bobby
+      </p>
+    </div>
+    <div class="box-3">
+      <p>
+        <img src="../../HTML5ForBeginner/HTMLStructure/img/cbc.png" alt="cbc" />
+        Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+        Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+        Bobby
+      </p>
+    </div>
+    <hr />
+    <div class="container">
+      <div id="box-1" class="box">
+        <h1>Title 1</h1>
+        <p>
+          Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+          Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is
+          Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+          Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi
+          My Name Is Punnawich Bobby
+        </p>
+      </div>
+
+      <div id="box-2" class="box">
+        <h1>Title 2</h1>
+        <p>
+          Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+          Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is
+          Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+          Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi
+          My Name Is Punnawich Bobby
+        </p>
+      </div>
+      <!-- Clear -->
+      <div class="clr"></div>
+      <div id="box-3" class="box">
+        <h1>Title 3</h1>
+        <p>
+          Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+          Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is
+          Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+          Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi
+          My Name Is Punnawich Bobby
+        </p>
+      </div>
+      <div id="box-4" class="box">
+        <h1>Title 4</h1>
+        <p>
+          Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name
+          Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is
+          Punnawich Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich
+          Bobby Hi My Name Is Punnawich Bobby Hi My Name Is Punnawich Bobby Hi
+          My Name Is Punnawich Bobby
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
