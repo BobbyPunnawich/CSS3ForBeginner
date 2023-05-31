@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Style</title>
+    <style>
+      a {
+        text-decoration: none;
+        padding-right: 20px;
+      }
+      a:link {
+        color: red;
+        /* Block = เว้นบรรทัด */
+      }
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        background-color: yellow;
+        text-decoration: underline;
+      }
+      a:active {
+        background-color: red;
+      }
+      li {
+        display: inline;
+      }
+      .box {
+        width: 30%;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-left: 20px;
+        text-align: center;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Google</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="www.google.com" target="_blank">About</a></li>
+    </ul>
+
+    <hr />
+
+    <div class="box">
+      <h1>Title 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit eos,
+        delectus, in quibusdam ab officia itaque odio earum adipisci dignissimos
+        consequatur pariatur reiciendis. Rerum architecto inventore fugiat qui
+        esse.
+      </p>
+    </div>
+    <div class="box">
+      <h1>Title 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit eos,
+        delectus, in quibusdam ab officia itaque odio earum adipisci dignissimos
+        consequatur pariatur reiciendis. Rerum architecto inventore fugiat qui
+        esse.
+      </p>
+    </div>
+    <div class="box">
+      <h1>Title 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit eos,
+        delectus, in quibusdam ab officia itaque odio earum adipisci dignissimos
+        consequatur pariatur reiciendis. Rerum architecto inventore fugiat qui
+        esse.
+      </p>
+    </div>
+  </body>
+</html>
